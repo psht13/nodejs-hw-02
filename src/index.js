@@ -1,3 +1,10 @@
 import { startServer } from './server.js';
 
-startServer();
+const main = ()=> {
+
+    await initMongoDB();
+    startServer();
+
+}
+
+main();
