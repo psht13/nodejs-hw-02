@@ -1,10 +1,9 @@
+import { initMongoDB } from './db/initMongoDB.js';
 import { startServer } from './server.js';
 
-const main = ()=> {
-
-    await initMongoDB();
-    startServer();
-
-}
+const main = async () => {
+  await initMongoDB();
+  startServer();
+};
 
 main();
